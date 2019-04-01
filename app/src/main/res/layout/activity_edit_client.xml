@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dodocarlos.com.visitas.ClientActivity">
+
+    <TextView
+        android:id="@+id/clientCodeEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="11dp"
+        android:text="Código:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/clientFantasiaEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/clientCodeEdit"
+        android:layout_below="@+id/clientCodeEdit"
+        android:layout_marginTop="54dp"
+        android:text="Fantasia:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/clientAdressEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Endereço:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/editTextEnderecoEdit"
+        android:layout_alignBottom="@+id/editTextEnderecoEdit"
+        android:layout_alignStart="@+id/clientBairroEdit" />
+
+    <TextView
+        android:id="@+id/clientCityEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextCidadeEdit"
+        android:layout_alignBottom="@+id/editTextCidadeEdit"
+        android:layout_alignStart="@+id/clientFantasiaEdit"
+        android:text="Cidade:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/clientNumEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Número:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/editTextNumeroEdit"
+        android:layout_alignBottom="@+id/editTextNumeroEdit"
+        android:layout_alignStart="@+id/clientAdressEdit" />
+
+    <TextView
+        android:id="@+id/clientBairroEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bairro:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/editTextBairroEdit"
+        android:layout_alignBottom="@+id/editTextBairroEdit"
+        android:layout_alignStart="@+id/clientCityEdit" />
+
+    <TextView
+        android:id="@+id/clientContactEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contato:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/editTextContatoEdit"
+        android:layout_alignBottom="@+id/editTextContatoEdit"
+        android:layout_alignStart="@+id/clientNumEdit" />
+
+    <TextView
+        android:id="@+id/clientPhone1Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefone 1:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/editTextTelefone1Edit"
+        android:layout_alignBottom="@+id/editTextTelefone1Edit"
+        android:layout_alignStart="@+id/clientContactEdit" />
+
+    <TextView
+        android:id="@+id/clientPhone2Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefone 2:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/editTextTelefone2Edit"
+        android:layout_alignBottom="@+id/editTextTelefone2Edit"
+        android:layout_alignStart="@+id/clientPhone1Edit" />
+
+    <Button
+        android:id="@+id/buttonSaveEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/clientPhone2Edit"
+        android:layout_toStartOf="@+id/buttonCancelEdit" />
+
+    <Button
+        android:id="@+id/buttonCancelEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonSaveEdit"
+        android:layout_alignBottom="@+id/buttonSaveEdit"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp"
+        android:layout_toEndOf="@+id/space2"
+        android:text="Cancelar" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonSaveEdit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/space2" />
+
+    <TextView
+        android:id="@+id/textViewNomeEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/editTextNomeEdit"
+        android:layout_alignBottom="@+id/editTextNomeEdit"
+        android:layout_alignStart="@+id/clientFantasiaEdit" />
+
+    <EditText
+        android:id="@+id/editTextFantasiaEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/clientFantasiaEdit"
+        android:layout_alignBottom="@+id/clientFantasiaEdit"
+        android:layout_alignEnd="@+id/buttonCancelEdit"
+        android:layout_alignStart="@+id/editTextNumeroEdit"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextCidadeEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/buttonCancelEdit"
+        android:layout_below="@+id/editTextFantasiaEdit"
+        android:layout_toEndOf="@+id/clientPhone1Edit"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextBairroEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextCidadeEdit"
+        android:layout_below="@+id/editTextCidadeEdit"
+        android:layout_toEndOf="@+id/clientPhone1Edit"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextEnderecoEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextBairroEdit"
+        android:layout_below="@+id/editTextBairroEdit"
+        android:layout_toEndOf="@+id/clientPhone1Edit"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextNumeroEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextEnderecoEdit"
+        android:layout_below="@+id/editTextEnderecoEdit"
+        android:layout_toEndOf="@+id/clientPhone1Edit"
+        android:ems="10"
+        android:inputType="number"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextContatoEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextNumeroEdit"
+        android:layout_below="@+id/editTextNumeroEdit"
+        android:layout_toEndOf="@+id/clientPhone1Edit"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextTelefone1Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextContatoEdit"
+        android:layout_below="@+id/editTextContatoEdit"
+        android:layout_toEndOf="@+id/clientPhone1Edit"
+        android:ems="10"
+        android:inputType="phone"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextTelefone2Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTelefone1Edit"
+        android:ems="10"
+        android:inputType="phone"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp"
+        android:layout_alignEnd="@+id/editTextTelefone1Edit"
+        android:layout_toEndOf="@+id/clientPhone2Edit" />
+
+    <EditText
+        android:id="@+id/editTextNomeEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextFantasiaEdit"
+        android:layout_alignEnd="@+id/editTextFantasiaEdit"
+        android:layout_alignStart="@+id/editTextFantasiaEdit"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp" />
+
+
+
+</RelativeLayout>

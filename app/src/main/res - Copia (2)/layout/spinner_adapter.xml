@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewCidadeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/radioButtonCidade"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/radioButtonCidade"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical"
+        android:text="Cidade"
+        android:textAlignment="inherit"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="24sp" />
+
+    <RadioButton
+        android:id="@+id/radioButtonCidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:focusableInTouchMode="false"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textColorLink="@android:color/holo_blue_bright" />
+</RelativeLayout>

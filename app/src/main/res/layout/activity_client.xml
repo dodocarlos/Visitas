@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dodocarlos.com.visitas.ClientActivity">
+
+    <TextView
+        android:id="@+id/clientCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="11dp"
+        android:text="Código:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/clientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/clientCode"
+        android:layout_below="@+id/clientCode"
+        android:text="Nome:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/clientFantasia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/clientName"
+        android:layout_below="@+id/clientName"
+        android:text="Fantasia:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/clientAdress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/clientBairro"
+        android:layout_below="@+id/clientBairro"
+        android:text="Endereço:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/clientCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cidade:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp"
+        android:layout_below="@+id/clientFantasia"
+        android:layout_alignStart="@+id/clientFantasia" />
+
+    <TextView
+        android:id="@+id/clientNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/clientAdress"
+        android:layout_below="@+id/clientAdress"
+        android:text="Número:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/clientBairro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/clientCity"
+        android:layout_below="@+id/clientCity"
+        android:text="Bairro:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/clientContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/clientNum"
+        android:layout_below="@+id/clientNum"
+        android:text="Contato:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/clientPhone1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/clientContact"
+        android:layout_below="@+id/clientContact"
+        android:text="Telefone 1:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/clientPhone2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/clientPhone1"
+        android:layout_below="@+id/clientPhone1"
+        android:text="Telefone 2:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/ButtonVisited"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/clientPhone2"
+        android:layout_marginBottom="19dp"
+        android:text="Visitado"
+        android:layout_toStartOf="@+id/buttonDelete" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apagar"
+        android:layout_alignBaseline="@+id/ButtonVisited"
+        android:layout_alignBottom="@+id/ButtonVisited"
+        android:layout_toStartOf="@+id/buttonEdit" />
+
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonDelete"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="14dp"
+        android:text="Editar" />
+
+    <ImageView
+        android:id="@+id/imageViewVisitadoInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/circulo_vermelho"
+        android:layout_above="@+id/textVisitadoa"
+        android:layout_alignStart="@+id/ButtonVisited" />
+
+    <TextView
+        android:id="@+id/textVisitadoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
+        android:text="Visitado a:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="16sp"
+        android:layout_above="@+id/ButtonVisited"
+        android:layout_alignStart="@+id/imageViewVisitadoInfo" />
+</RelativeLayout>
